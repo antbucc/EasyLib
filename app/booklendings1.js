@@ -5,7 +5,6 @@ const request = require('supertest');
 const app = require('./app');
 const jwt = require('jsonwebtoken'); // used to create, sign, and verify tokens
 const mongoose = require('mongoose');
-const dotenv = require('dotenv').config();
 
 describe('GET /api/v1/booklendings', () => {
 
@@ -21,7 +20,6 @@ describe('GET /api/v1/booklendings', () => {
 
   afterAll(() => {
     mongoose.connection.close(true);
-    console.log("Database connection closed");
   });
 
   // create a valid token
