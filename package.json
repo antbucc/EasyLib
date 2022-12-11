@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src",
-    "test": "jest app/app.test.js"
+    "test": "jest",
+    "start": "node index.js",
+    "start_local": "echo use: $ npm run dev",
+    "dev": "node -r dotenv/config index.js"
   },
   "jest": {
     "verbose": true,
@@ -13,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antbucc/EasyLib.git"
+    "url": "git+https://github.com/2020-unitn-SE2/EasyLib.git"
   },
   "author": "Marco",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/antbucc/EasyLib/issues"
+    "url": "https://github.com/2020-unitn-SE2/EasyLib/issues"
   },
-  "homepage": "https://github.com/antbucc/EasyLib#readme",
+  "homepage": "https://github.com/2020-unitn-SE2/EasyLib#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
