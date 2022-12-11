@@ -44,7 +44,7 @@ app.use(cors())
 // });
 
 
-
+/// comment 
 /**
  * Serve front-end static files
  */
@@ -54,7 +54,7 @@ app.use('/', express.static('static')); // expose also this folder
 
 
 
-app.use((req,res,next) => {
+app.use((req, res, next) => {
     console.log(req.method + ' ' + req.url)
     next()
 })
