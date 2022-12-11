@@ -28,3 +28,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "easylib2223"
           heroku_email: "bucchiarone@fbk.eu"
+          branch: "special-branch" # IMPORTANT
