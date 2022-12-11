@@ -23,8 +23,9 @@ jobs:
     needs: [build]
     steps:
       - uses: actions/checkout@v2
-      - uses: akhileshns/heroku-deploy@v3.12.12
+      - uses: akhileshns/heroku-deploy@v3.7.8
         with:
+          args: deploy --dir=build --prod
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "easylib2223"
           heroku_email: "bucchiarone@fbk.eu"
