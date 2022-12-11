@@ -5,24 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    //"test": "jest --coverage",
     "start_local": "echo use: $ npm run dev",
     "dev": "node -r dotenv/config index.js"
   },
-  "jest": {
-    "verbose": true,
-    "collectCoverage": true
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/2020-unitn-SE2/EasyLib.git"
+    "url": "git+https://github.com/antbucc/EasyLib.git"
   },
-  "author": "Marco",
+  "author": "Antonio",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/2020-unitn-SE2/EasyLib/issues"
-  },
-  "homepage": "https://github.com/2020-unitn-SE2/EasyLib#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
