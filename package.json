@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "start": "node index.js",
-    "start_local": "echo use: $ npm run dev",
-    "dev": "node -r dotenv/config index.js"
+    "start": "node src",
+    "test": "jest app/app.test.js"
   },
   "jest": {
     "verbose": true,
